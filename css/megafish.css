@@ -1,0 +1,216 @@
+/*** ESSENTIAL STYLES ***/
+.sf-menu {
+  /* position: relative; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sf-menu .sf-mega {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.sf-menu > li {
+  float: left;
+}
+.sf-menu li:hover > .sf-mega,
+.sf-menu li.sfHover > .sf-mega {
+  display: block;
+}
+
+.sf-menu > li > a {
+  display: block;
+  position: relative;
+}
+
+.the-more-link { position: initial !important; }
+
+
+
+.sf-menu .sf-mega {
+  box-shadow: 2px 3px 6px rgba(0,0,0,.2);
+  width: 100%; /* allow long menu items to determine submenu width */
+  margin-top: 50px;
+}
+
+.navbar-inverse .sf-mega { background-color: #222; border-top: 1px solid black;}
+
+/*** mega menu dropdown ***/
+.sf-mega {
+  padding: 1em;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 7px; 
+}
+.sf-mega-section {
+  float: left;
+}
+
+
+
+
+#menu-main-nav .sub-menu .sub-menu {
+/* 	display: none;  */
+}
+
+
+
+
+	.the-default-nav { position: relative; }
+
+	#octane-mega-menu .sf-mega-section {
+		width: 25%;
+		border-right: none !important; 
+	}
+	
+	#octane-mega-menu .sf-mega-section ul li {
+		padding: 0 !important; 
+		display: block !important;
+		float: none !important;
+	}
+	
+	
+	#octane-mega-menu .sub-menu { 
+		display: block !important; 
+		position: inherit !important;
+		background: transparent !important;
+		padding: 0 15px !important;
+		margin: 0px 0px 0px 7px;
+		top: 0; 
+		border: none !important;
+		box-shadow: none !important; 
+	}
+	
+	#octane-mega-menu .sub-menu li { 
+		display: block !important; 
+		float: none !important;
+		margin: 0 !important;
+		padding: 0 !important; 
+	}
+	
+	#octane-mega-menu .sub-menu li a { 
+		display: block !important; 
+		float: none !important;
+		margin: 0 !important;
+		padding: 0 !important; 
+		/* font-size: 12px !important; */
+		text-decoration: none !important;
+	}
+	
+	#octane-mega-menu .nav>li>a { color: #9d9d9d; }
+	
+	#octane-mega-menu .nav>li>a:hover { color: #fff; }
+	
+	#octane-mega-menu .nav>li>a:focus, #octane-mega-menu .nav>li>a:hover { background-color: transparent !important; }
+	
+		
+		
+		
+	/* for a certain sized browser this is going to hide the menu from displaying and only have it display on hover */
+	@media (min-width:768px) {
+		
+		.navbar-inverse .sub-menu { background: #222; border-top: 1px solid black; }
+		.sub-menu {
+			display: none;
+			position: absolute;
+			background: #fff;
+			padding: 0;
+			margin: 0;
+			top: 50px;
+			z-index:9999;
+			min-width: 200px;
+			border-radius: 7px;
+			box-shadow: 2px 3px 6px rgba(0,0,0,.2);
+		}
+		li:hover .sub-menu {
+			display: block;
+		}
+	}
+	
+	.sub-menu {
+		
+	}
+	
+	.sub-menu li {	
+		list-style: none;
+	}
+	.sub-menu li:last-child {
+		margin-bottom: 0;
+	}
+	.sub-menu a  {
+		color: #9d9d9d; 
+		padding: 10px 15px; 
+		display: block; 
+		text-decoration: none;
+	}
+	/* color treatments as well being applied */
+	 .sub-menu a:hover  {
+		color: #fff;	
+	}	 
+	/* make sure the current menu page is working for child or nested pages */
+	.current-menu-item > a, .current-menu-parent > a {
+		color: blue !important;	
+	}
+	.current-menu-parent li a {
+		background: inherit;
+	}
+	.current-menu-parent .current-menu-item a {
+		/* color: #fff; */
+		font-weight: bold;
+	}
+	
+	
+	
+	
+	.sf-mega-section li a:first-child { /* padding-top: 0; */ }
+	
+	
+	@media only screen and (max-width: 1200px) {
+		
+		#octane-menu-menu .sf-mega-section .nav>li>a { /* font-size: 14px !important;  */}
+		#octane-mega-menu .sub-menu li a { /* font-size: 8px !important;  */} 
+	}
+	
+	
+	
+	
+	
+	
+	@media only screen and ( max-width: 768px ) {
+	
+		#menu-main-nav { margin: 0 !important; }
+		
+		.vqdev-social {  margin: 0 auto !important; }
+		.vqdev-social li { display: inline-block !important; }
+	
+		.sf-mega { 
+			display: block !important; 
+			position: relative !important;
+			top: 0; 
+			bottom: 0;
+			left: 0; 
+			right: 0; 
+			background: transparent !important; 
+			padding: 0 !important; 
+			margin: 0 !important; 
+			box-shadow: none !important;
+			border: none !important;
+		}
+	
+		#octane-mega-menu .sf-mega-section { width: 100%; }
+		
+		#octane-mega-menu .nav>li>a { /* padding: 10px 0; */ }
+		
+		
+	
+		#octane-mega-menu .trigger { display: none !important; }
+	
+	
+	
+	
+	}
+	
+	

@@ -1,0 +1,1 @@
+						<section id="footer">					<footer>						<div class="container">														<p>&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?> </p>						</div>					</footer>				</section> <!-- /container -->								</div> <!--END OF WRAPPER -->				<?php wp_footer(); ?>			</body></html>
